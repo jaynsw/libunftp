@@ -132,7 +132,7 @@ impl Authenticator<DefaultUser> for RestAuthenticator {
 
         let req = Request::builder()
             .method(method)
-            .header("Content-type", "application/json")
+            .header("Content-Type", "application/json")
             .uri(url)
             .body(Body::from(body))?;
 
